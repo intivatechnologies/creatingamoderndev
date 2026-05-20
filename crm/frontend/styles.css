@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+body, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: white;
+}
+
+body {
+/*@apply bg-background text-foreground font-mono antialiased;*/
+font-family: 'JetBrains Mono', monospace;
+background-color: #181818;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Inter', sans-serif;
+/*@apply font-semibold tracking-tight;*/
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#live-thought-layer{
+    margin-bottom: 14px;
+    padding-top: 6px;
+}
+
+.card{
+    background-color: #1F1F1F;
+    border: solid 1px #343434;
+}
+
+.card ul{
+    margin-left: -12px;
+}
+
+.card-label, .card-stat{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.task-intent svg{
+    color: #fd9800;
+}
+
+.task-constraint svg{
+    color: #d10000;
+}
+
+.task-next-action svg{
+    color: #74cd4e;
+}
+
+hr{
+    border: none;
+    border-top: solid 1px #343434;
+}
+
+header, main, footer {
+    padding-left: 26px;
+    padding-right: 26px;
+}
