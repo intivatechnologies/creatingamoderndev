@@ -24,6 +24,17 @@ header{
     padding-bottom: 5px;
 }
 
+.basic-anim, .basic-anim-active{
+    transition: 0.3s;
+    opacity: 0;
+    margin-top: -18px;
+}
+
+.basic-anim-active{
+    opacity: 1;
+    margin-top: 0;
+}
+
 #live-thought-layer{
     margin-bottom: 14px;
     padding-top: 6px;
@@ -32,16 +43,28 @@ header{
 .card{
     background-color: #1F1F1F;
     border: solid 1px #343434;
+    padding-top: 18px;
 }
 
-.card ul{
-    margin-left: -12px;
+.card-assignee{
+    margin-left: 24px;
 }
 
-.card-label, .card-stat{
+.card-label{
+    display: inline-flex;
+    background-color: #181818;
+    border: solid 1px #343434;
+}
+
+.card-label .flexbox{
     display: flex;
-    align-items: center;
     gap: 4px;
+    align-items: center;
+}
+
+*[class$="discourse"]{
+    padding-top: 14px;
+    padding-bottom: 18px;
 }
 
 .task-intent svg{
@@ -54,6 +77,14 @@ header{
 
 .task-next-action svg{
     color: #74cd4e;
+}
+
+.task-status svg{
+    color: #4e8ecd;
+}
+
+.task-category svg{
+    color: #d14ed1;
 }
 
 hr{
